@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Копировальня · печать и копирование</title>
     <!-- Google Fonts & Font Awesome -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,207 +24,217 @@
             justify-content: center;
             min-height: 100vh;
             margin: 0;
-            padding: 12px;
+            padding: 16px;
             color: #1e2b3c;
-            line-height: 1.4;
+            line-height: 1.5;
         }
 
         .card {
-            max-width: 100%;
+            max-width: 520px;
             width: 100%;
             background: #ffffff;
-            border-radius: 32px;
-            box-shadow: 0 20px 40px -12px rgba(0,0,0,0.2), 0 4px 12px rgba(0,0,0,0.05);
+            border-radius: 36px;
+            box-shadow: 0 25px 50px -12px rgba(0,0,0,0.2), 0 4px 12px rgba(0,0,0,0.05);
             overflow: hidden;
+            transition: transform 0.2s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.01);
         }
 
         .top-bar {
-            height: 8px;
+            height: 10px;
             background: linear-gradient(90deg, #4b6bfb 0%, #7f5af0 60%, #b47cf0 100%);
         }
 
         .content {
-            padding: 20px 18px 26px 18px;
+            padding: 28px 24px 32px 24px;
         }
 
-        /* шапка */
         .shop-header {
             display: flex;
             align-items: center;
-            gap: 14px;
-            margin-bottom: 22px;
+            gap: 16px;
+            margin-bottom: 28px;
         }
 
         .icon-logo {
             background: #0b1525;
-            width: 52px;
-            height: 52px;
-            border-radius: 20px;
+            width: 58px;
+            height: 58px;
+            border-radius: 22px;
             display: flex;
             align-items: center;
             justify-content: center;
             color: white;
-            font-size: 26px;
-            box-shadow: 0 8px 14px -6px rgba(30,43,60,0.25);
+            font-size: 28px;
+            box-shadow: 0 10px 18px -8px rgba(30,43,60,0.3);
             flex-shrink: 0;
         }
 
         .title h1 {
-            font-size: 22px;
+            font-size: 24px;
             font-weight: 600;
             letter-spacing: -0.02em;
             color: #0d1b2e;
-            line-height: 1.2;
         }
 
         .title .sub {
-            font-size: 14px;
+            font-size: 15px;
             color: #5f6c80;
             font-weight: 500;
             margin-top: 4px;
             display: flex;
             align-items: center;
-            gap: 5px;
+            gap: 6px;
             flex-wrap: wrap;
         }
 
         .title .sub i {
-            font-size: 11px;
+            font-size: 12px;
             color: #3b82f6;
         }
 
         .hint-pill {
             background: #eef2f7;
             border-radius: 100px;
-            padding: 7px 12px;
-            font-size: 12.5px;
+            padding: 8px 14px;
+            font-size: 13px;
             font-weight: 500;
             color: #35527a;
-            margin-bottom: 20px;
+            margin-bottom: 24px;
             display: inline-flex;
             align-items: center;
-            gap: 6px;
+            gap: 8px;
             border: 1px solid #d9e2ef;
-            width: 100%;
         }
 
         .hint-pill i {
             color: #4f6af5;
-            font-size: 12px;
+            font-size: 13px;
         }
 
         .info-section {
             background: #f8fafd;
-            border-radius: 22px;
-            padding: 16px 16px;
-            margin-bottom: 16px;
+            border-radius: 24px;
+            padding: 18px 20px;
+            margin-bottom: 18px;
             border: 1px solid #eaeef5;
+            transition: 0.15s;
+        }
+
+        .info-section:hover {
+            border-color: #cdd9ec;
+            background: #fdfdfe;
         }
 
         .section-title {
             display: flex;
             align-items: center;
-            gap: 8px;
+            gap: 10px;
             font-weight: 600;
-            font-size: 15px;
-            margin-bottom: 12px;
+            font-size: 16px;
+            margin-bottom: 14px;
             color: #1f3a6b;
+            letter-spacing: -0.01em;
         }
 
         .section-title i {
-            width: 26px;
-            height: 26px;
+            width: 28px;
+            height: 28px;
             background: #ffffff;
-            border-radius: 10px;
+            border-radius: 12px;
             display: inline-flex;
             align-items: center;
             justify-content: center;
             color: #2e4ea1;
-            box-shadow: 0 4px 8px -4px rgba(0,0,0,0.1);
-            font-size: 13px;
+            box-shadow: 0 5px 12px -5px rgba(0,0,0,0.1);
+            font-size: 14px;
         }
 
         .work-status {
             display: flex;
             align-items: baseline;
             flex-wrap: wrap;
-            gap: 8px 12px;
-            margin-bottom: 12px;
+            gap: 8px 15px;
+            margin-bottom: 14px;
         }
 
         .status-badge {
             background: #e2f0e8;
             color: #0d6632;
             font-weight: 600;
-            font-size: 13px;
-            padding: 4px 14px;
+            font-size: 14px;
+            padding: 5px 16px;
             border-radius: 40px;
             display: inline-flex;
             align-items: center;
-            gap: 5px;
+            gap: 6px;
             border: 1px solid #b7dec9;
         }
 
         .status-badge i {
-            font-size: 8px;
+            font-size: 12px;
         }
 
         .work-time-large {
-            font-size: 24px;
+            font-size: 26px;
             font-weight: 600;
             letter-spacing: -0.02em;
             color: #0a1e32;
             background: #ffffff;
-            padding: 10px 14px;
-            border-radius: 20px;
-            margin: 8px 0 8px 0;
+            padding: 12px 16px;
+            border-radius: 22px;
+            margin: 10px 0 8px 0;
             border: 1px solid #e0e8f2;
             display: flex;
             align-items: center;
-            gap: 8px;
+            gap: 10px;
+            box-shadow: inset 0 2px 4px rgba(255,255,255,0.8);
         }
 
         .work-time-large i {
             color: #f97316;
-            font-size: 20px;
+            font-size: 22px;
         }
 
         .phone-row {
             display: flex;
             align-items: center;
-            gap: 12px;
-            font-size: 18px;
+            gap: 14px;
+            font-size: 20px;
             font-weight: 600;
-            padding: 6px 0;
+            padding: 8px 0;
             color: #15273f;
             flex-wrap: wrap;
         }
 
         .phone-row i {
-            font-size: 24px;
+            font-size: 26px;
             color: #2d4eac;
             background: #eaeef7;
-            padding: 10px;
-            border-radius: 18px;
+            padding: 12px;
+            border-radius: 20px;
         }
 
         .address-comment {
             background: #f1f6fe;
-            border-radius: 18px;
-            padding: 14px 16px;
-            margin-top: 16px;
+            border-radius: 20px;
+            padding: 16px 20px;
+            margin-top: 20px;
             border: 1px solid #cddefa;
             display: flex;
             align-items: flex-start;
-            gap: 12px;
+            gap: 14px;
         }
 
         .address-comment i {
-            font-size: 18px;
+            font-size: 20px;
             color: #1f4a9c;
             background: white;
-            padding: 8px;
-            border-radius: 16px;
+            padding: 10px;
+            border-radius: 18px;
         }
 
         .address-text {
@@ -234,19 +244,18 @@
         .address-text strong {
             display: block;
             font-weight: 600;
-            margin-bottom: 3px;
+            margin-bottom: 4px;
             color: #062348;
-            font-size: 14px;
         }
 
         .address-text p {
             color: #3d506e;
-            font-size: 14px;
+            font-size: 15px;
         }
 
-        /* ПРАЙС */
+        /* ПРАЙС С КРАТКИМИ ОПИСАНИЯМИ */
         .price-item-detailed {
-            padding: 14px 0;
+            padding: 16px 0;
             border-bottom: 1px solid #e5edf8;
         }
         .price-item-detailed:last-child {
@@ -256,7 +265,7 @@
             display: flex;
             justify-content: space-between;
             align-items: baseline;
-            margin-bottom: 5px;
+            margin-bottom: 6px;
         }
         .service-name {
             font-weight: 600;
@@ -264,48 +273,48 @@
             display: flex;
             align-items: center;
             gap: 8px;
-            font-size: 15px;
+            font-size: 16px;
         }
         .service-name i {
-            width: 22px;
+            width: 24px;
             color: #3361ad;
-            font-size: 15px;
+            font-size: 16px;
         }
         .service-cost {
             font-weight: 700;
-            font-size: 20px;
+            font-size: 22px;
             color: #152f55;
             background: #ecf3ff;
-            padding: 4px 14px;
-            border-radius: 36px;
+            padding: 4px 16px;
+            border-radius: 40px;
             border: 1px solid #c6d9fc;
             white-space: nowrap;
         }
         .service-desc {
-            font-size: 13.5px;
+            font-size: 14px;
             color: #2e6b4c;
-            margin-left: 30px;
-            margin-top: 3px;
+            margin-left: 32px;
+            margin-top: 4px;
             display: flex;
             align-items: center;
-            gap: 5px;
+            gap: 6px;
         }
         .service-desc i {
             color: #2e7d5e;
-            font-size: 12px;
+            font-size: 13px;
         }
         
         .bw-badge {
             background: #eaeef3;
             color: #1e3a5f;
-            padding: 5px 12px;
+            padding: 5px 14px;
             border-radius: 30px;
-            font-size: 12.5px;
+            font-size: 13px;
             font-weight: 600;
             display: inline-flex;
             align-items: center;
-            gap: 5px;
-            margin-bottom: 14px;
+            gap: 6px;
+            margin-bottom: 16px;
             border: 1px solid #bccfe8;
         }
 
@@ -313,9 +322,9 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-top: 16px;
+            margin-top: 18px;
             color: #7085a8;
-            font-size: 12.5px;
+            font-size: 13px;
             font-weight: 500;
         }
 
@@ -326,60 +335,60 @@
         hr {
             border: none;
             border-top: 2px solid #eaf0f8;
-            margin: 16px 0 10px 0;
+            margin: 18px 0 12px 0;
         }
 
-        /* блок с доплатами и скидками */
         .extra-info {
-            font-size: 13px;
+            font-size: 13.5px;
             color: #4e6b98;
             margin-top: 16px;
             border-top: 1px dashed #d6e2f0;
             padding-top: 14px;
             display: flex;
             flex-direction: column;
-            gap: 8px;
+            gap: 10px;
         }
         .extra-tags {
             display: flex;
             flex-wrap: wrap;
-            gap: 8px;
+            gap: 10px;
         }
         .extra-tag {
             background: #f0f5ff;
-            padding: 5px 14px;
+            padding: 5px 16px;
             border-radius: 30px;
-            font-size: 12.5px;
+            font-size: 13px;
         }
         .double-print {
             display: flex;
             align-items: center;
-            gap: 8px;
+            gap: 10px;
             background: #faf0e6;
-            padding: 8px 14px;
+            padding: 8px 18px;
             border-radius: 40px;
             color: #a3450e;
             font-weight: 500;
-            font-size: 13.5px;
+            font-size: 14px;
             flex-wrap: wrap;
         }
         .double-print i {
             color: #c95d1e;
+            font-size: 16px;
         }
         .double-print strong {
-            font-size: 16px;
+            font-size: 18px;
             margin-left: auto;
         }
 
         .store-footer {
             display: flex;
             margin-top: 14px;
-            gap: 6px;
+            gap: 8px;
             color: #416391;
             font-weight: 500;
-            font-size: 12.5px;
+            font-size: 13px;
             background: #edf4fe;
-            padding: 8px 14px;
+            padding: 8px 16px;
             border-radius: 50px;
             align-items: center;
             justify-content: center;
@@ -399,8 +408,8 @@
                 <div class="title">
                     <h1>Копировальня</h1>
                     <div class="sub">
-                        <i class="fas fa-map-pin"></i> Яндекс Маркет, 2 этаж
-                        <i class="fas fa-check-circle" style="color:#29b87a;"></i>
+                        <i class="fas fa-map-pin"></i> помещение Яндекс Маркет, 2 этаж
+                        <i class="fas fa-check-circle" style="color:#29b87a; margin-left:4px;"></i>
                     </div>
                 </div>
             </div>
@@ -416,13 +425,13 @@
                     <i class="fas fa-clock"></i> Режим работы
                 </div>
                 <div class="work-status">
-                    <span class="status-badge"><i class="fas fa-circle"></i> Работает</span>
-                    <span style="font-size: 14px; color:#2d4c7c;"><i class="far fa-calendar-alt"></i> ежедневно 10:00–21:00</span>
+                    <span class="status-badge"><i class="fas fa-circle" style="font-size: 8px;"></i> Работает</span>
+                    <span style="font-size: 15px; color:#2d4c7c;"><i class="far fa-calendar-alt"></i> ежедневно 10:00–21:00</span>
                 </div>
                 <div class="work-time-large">
                     <i class="far fa-clock"></i> 10:00 – 21:00
                 </div>
-                <div style="font-size:12.5px; color:#6c819e; margin-top:6px;">
+                <div style="font-size:13px; color:#6c819e; margin-top:8px;">
                     <span><i class="far fa-question-circle"></i> Без перерыва</span>
                 </div>
             </div>
@@ -438,7 +447,7 @@
                 </div>
             </div>
 
-            <!-- расценки -->
+            <!-- расценки (ПК-стиль) -->
             <div class="info-section" style="background: #ffffff;">
                 <div class="section-title">
                     <i class="fas fa-tags"></i> Расценки
@@ -505,7 +514,7 @@
                     </div>
                 </div>
                 
-                <!-- допы: скидки и двойная печать -->
+                <!-- дополнительные условия: скидки и двойная печать -->
                 <div class="extra-info">
                     <div class="extra-tags">
                         <span class="extra-tag"><i class="fas fa-tag"></i> От 30 листов — 18₽</span>
