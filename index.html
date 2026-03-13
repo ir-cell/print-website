@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
     <title>Копировальня · печать и копирование</title>
     <!-- Google Fonts & Font Awesome -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,217 +24,207 @@
             justify-content: center;
             min-height: 100vh;
             margin: 0;
-            padding: 16px;
+            padding: 12px;
             color: #1e2b3c;
-            line-height: 1.5;
+            line-height: 1.4;
         }
 
         .card {
-            max-width: 500px;
+            max-width: 100%;
             width: 100%;
             background: #ffffff;
-            border-radius: 36px;
-            box-shadow: 0 25px 50px -12px rgba(0,0,0,0.2), 0 4px 12px rgba(0,0,0,0.05);
+            border-radius: 32px;
+            box-shadow: 0 20px 40px -12px rgba(0,0,0,0.2), 0 4px 12px rgba(0,0,0,0.05);
             overflow: hidden;
-            transition: transform 0.2s ease;
-        }
-
-        .card:hover {
-            transform: scale(1.01);
         }
 
         .top-bar {
-            height: 10px;
+            height: 8px;
             background: linear-gradient(90deg, #4b6bfb 0%, #7f5af0 60%, #b47cf0 100%);
         }
 
         .content {
-            padding: 28px 24px 32px 24px;
+            padding: 20px 18px 26px 18px;
         }
 
+        /* шапка */
         .shop-header {
             display: flex;
             align-items: center;
-            gap: 16px;
-            margin-bottom: 28px;
+            gap: 14px;
+            margin-bottom: 22px;
         }
 
         .icon-logo {
             background: #0b1525;
-            width: 58px;
-            height: 58px;
-            border-radius: 22px;
+            width: 52px;
+            height: 52px;
+            border-radius: 20px;
             display: flex;
             align-items: center;
             justify-content: center;
             color: white;
-            font-size: 28px;
-            box-shadow: 0 10px 18px -8px rgba(30,43,60,0.3);
+            font-size: 26px;
+            box-shadow: 0 8px 14px -6px rgba(30,43,60,0.25);
+            flex-shrink: 0;
         }
 
         .title h1 {
-            font-size: 24px;
+            font-size: 22px;
             font-weight: 600;
             letter-spacing: -0.02em;
             color: #0d1b2e;
+            line-height: 1.2;
         }
 
         .title .sub {
-            font-size: 15px;
+            font-size: 14px;
             color: #5f6c80;
             font-weight: 500;
             margin-top: 4px;
             display: flex;
             align-items: center;
-            gap: 6px;
+            gap: 5px;
             flex-wrap: wrap;
         }
 
         .title .sub i {
-            font-size: 12px;
+            font-size: 11px;
             color: #3b82f6;
         }
 
         .hint-pill {
             background: #eef2f7;
             border-radius: 100px;
-            padding: 8px 14px;
-            font-size: 13px;
+            padding: 7px 12px;
+            font-size: 12.5px;
             font-weight: 500;
             color: #35527a;
-            margin-bottom: 24px;
+            margin-bottom: 20px;
             display: inline-flex;
             align-items: center;
-            gap: 8px;
+            gap: 6px;
             border: 1px solid #d9e2ef;
+            width: 100%;
         }
 
         .hint-pill i {
             color: #4f6af5;
-            font-size: 13px;
+            font-size: 12px;
         }
 
         .info-section {
             background: #f8fafd;
-            border-radius: 24px;
-            padding: 18px 20px;
-            margin-bottom: 18px;
+            border-radius: 22px;
+            padding: 16px 16px;
+            margin-bottom: 16px;
             border: 1px solid #eaeef5;
-            transition: 0.15s;
-        }
-
-        .info-section:hover {
-            border-color: #cdd9ec;
-            background: #fdfdfe;
         }
 
         .section-title {
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 8px;
             font-weight: 600;
-            font-size: 16px;
-            margin-bottom: 14px;
+            font-size: 15px;
+            margin-bottom: 12px;
             color: #1f3a6b;
-            letter-spacing: -0.01em;
         }
 
         .section-title i {
-            width: 28px;
-            height: 28px;
+            width: 26px;
+            height: 26px;
             background: #ffffff;
-            border-radius: 12px;
+            border-radius: 10px;
             display: inline-flex;
             align-items: center;
             justify-content: center;
             color: #2e4ea1;
-            box-shadow: 0 5px 12px -5px rgba(0,0,0,0.1);
-            font-size: 14px;
+            box-shadow: 0 4px 8px -4px rgba(0,0,0,0.1);
+            font-size: 13px;
         }
 
         .work-status {
             display: flex;
             align-items: baseline;
             flex-wrap: wrap;
-            gap: 8px 15px;
-            margin-bottom: 14px;
+            gap: 8px 12px;
+            margin-bottom: 12px;
         }
 
         .status-badge {
             background: #e2f0e8;
             color: #0d6632;
             font-weight: 600;
-            font-size: 14px;
-            padding: 5px 16px;
+            font-size: 13px;
+            padding: 4px 14px;
             border-radius: 40px;
             display: inline-flex;
             align-items: center;
-            gap: 6px;
+            gap: 5px;
             border: 1px solid #b7dec9;
         }
 
         .status-badge i {
-            font-size: 12px;
+            font-size: 8px;
         }
 
         .work-time-large {
-            font-size: 26px;
+            font-size: 24px;
             font-weight: 600;
             letter-spacing: -0.02em;
             color: #0a1e32;
             background: #ffffff;
-            padding: 12px 16px;
-            border-radius: 22px;
-            margin: 10px 0 8px 0;
+            padding: 10px 14px;
+            border-radius: 20px;
+            margin: 8px 0 8px 0;
             border: 1px solid #e0e8f2;
             display: flex;
             align-items: center;
-            gap: 10px;
-            box-shadow: inset 0 2px 4px rgba(255,255,255,0.8);
+            gap: 8px;
         }
 
         .work-time-large i {
             color: #f97316;
-            font-size: 22px;
+            font-size: 20px;
         }
 
         .phone-row {
             display: flex;
             align-items: center;
-            gap: 14px;
-            font-size: 20px;
+            gap: 12px;
+            font-size: 18px;
             font-weight: 600;
-            padding: 8px 0;
+            padding: 6px 0;
             color: #15273f;
-            letter-spacing: -0.01em;
             flex-wrap: wrap;
         }
 
         .phone-row i {
-            font-size: 26px;
+            font-size: 24px;
             color: #2d4eac;
             background: #eaeef7;
-            padding: 12px;
-            border-radius: 20px;
+            padding: 10px;
+            border-radius: 18px;
         }
 
         .address-comment {
             background: #f1f6fe;
-            border-radius: 20px;
-            padding: 16px 20px;
-            margin-top: 20px;
+            border-radius: 18px;
+            padding: 14px 16px;
+            margin-top: 16px;
             border: 1px solid #cddefa;
             display: flex;
             align-items: flex-start;
-            gap: 14px;
+            gap: 12px;
         }
 
         .address-comment i {
-            font-size: 20px;
+            font-size: 18px;
             color: #1f4a9c;
             background: white;
-            padding: 10px;
-            border-radius: 18px;
+            padding: 8px;
+            border-radius: 16px;
         }
 
         .address-text {
@@ -244,18 +234,19 @@
         .address-text strong {
             display: block;
             font-weight: 600;
-            margin-bottom: 4px;
+            margin-bottom: 3px;
             color: #062348;
+            font-size: 14px;
         }
 
         .address-text p {
             color: #3d506e;
-            font-size: 15px;
+            font-size: 14px;
         }
 
-        /* ПРАЙС С КРАТКИМИ ОПИСАНИЯМИ */
+        /* ПРАЙС */
         .price-item-detailed {
-            padding: 16px 0;
+            padding: 14px 0;
             border-bottom: 1px solid #e5edf8;
         }
         .price-item-detailed:last-child {
@@ -265,7 +256,7 @@
             display: flex;
             justify-content: space-between;
             align-items: baseline;
-            margin-bottom: 6px;
+            margin-bottom: 5px;
         }
         .service-name {
             font-weight: 600;
@@ -273,48 +264,48 @@
             display: flex;
             align-items: center;
             gap: 8px;
-            font-size: 16px;
+            font-size: 15px;
         }
         .service-name i {
-            width: 24px;
+            width: 22px;
             color: #3361ad;
-            font-size: 16px;
+            font-size: 15px;
         }
         .service-cost {
             font-weight: 700;
-            font-size: 22px;
+            font-size: 20px;
             color: #152f55;
             background: #ecf3ff;
-            padding: 4px 16px;
-            border-radius: 40px;
+            padding: 4px 14px;
+            border-radius: 36px;
             border: 1px solid #c6d9fc;
             white-space: nowrap;
         }
         .service-desc {
-            font-size: 14px;
+            font-size: 13.5px;
             color: #2e6b4c;
-            margin-left: 32px;
-            margin-top: 4px;
+            margin-left: 30px;
+            margin-top: 3px;
             display: flex;
             align-items: center;
-            gap: 6px;
+            gap: 5px;
         }
         .service-desc i {
             color: #2e7d5e;
-            font-size: 13px;
+            font-size: 12px;
         }
         
         .bw-badge {
             background: #eaeef3;
             color: #1e3a5f;
-            padding: 5px 14px;
+            padding: 5px 12px;
             border-radius: 30px;
-            font-size: 13px;
+            font-size: 12.5px;
             font-weight: 600;
             display: inline-flex;
             align-items: center;
-            gap: 6px;
-            margin-bottom: 16px;
+            gap: 5px;
+            margin-bottom: 14px;
             border: 1px solid #bccfe8;
         }
 
@@ -322,9 +313,9 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-top: 18px;
+            margin-top: 16px;
             color: #7085a8;
-            font-size: 13px;
+            font-size: 12.5px;
             font-weight: 500;
         }
 
@@ -335,7 +326,64 @@
         hr {
             border: none;
             border-top: 2px solid #eaf0f8;
-            margin: 18px 0 12px 0;
+            margin: 16px 0 10px 0;
+        }
+
+        /* блок с доплатами и скидками */
+        .extra-info {
+            font-size: 13px;
+            color: #4e6b98;
+            margin-top: 16px;
+            border-top: 1px dashed #d6e2f0;
+            padding-top: 14px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        .extra-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        .extra-tag {
+            background: #f0f5ff;
+            padding: 5px 14px;
+            border-radius: 30px;
+            font-size: 12.5px;
+        }
+        .double-print {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background: #faf0e6;
+            padding: 8px 14px;
+            border-radius: 40px;
+            color: #a3450e;
+            font-weight: 500;
+            font-size: 13.5px;
+            flex-wrap: wrap;
+        }
+        .double-print i {
+            color: #c95d1e;
+        }
+        .double-print strong {
+            font-size: 16px;
+            margin-left: auto;
+        }
+
+        .store-footer {
+            display: flex;
+            margin-top: 14px;
+            gap: 6px;
+            color: #416391;
+            font-weight: 500;
+            font-size: 12.5px;
+            background: #edf4fe;
+            padding: 8px 14px;
+            border-radius: 50px;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
         }
     </style>
 </head>
@@ -351,8 +399,8 @@
                 <div class="title">
                     <h1>Копировальня</h1>
                     <div class="sub">
-                        <i class="fas fa-map-pin"></i> 1-я Мелитопольская ул., 2А Яндекс Маркет
-                        <i class="fas fa-check-circle" style="color:#29b87a; margin-left:4px;"></i>
+                        <i class="fas fa-map-pin"></i> Яндекс Маркет, 2 этаж
+                        <i class="fas fa-check-circle" style="color:#29b87a;"></i>
                     </div>
                 </div>
             </div>
@@ -362,24 +410,24 @@
                 <i class="fas fa-regular fa-eye"></i> Режим работы и статус видны в Поиске и Картах
             </div>
 
-            <!-- БЛОК РЕЖИМ РАБОТЫ -->
+            <!-- режим работы -->
             <div class="info-section">
                 <div class="section-title">
                     <i class="fas fa-clock"></i> Режим работы
                 </div>
                 <div class="work-status">
-                    <span class="status-badge"><i class="fas fa-circle" style="font-size: 8px;"></i> Работает</span>
-                    <span style="font-size: 15px; color:#2d4c7c;"><i class="far fa-calendar-alt"></i> ежедневно 10:00–21:00</span>
+                    <span class="status-badge"><i class="fas fa-circle"></i> Работает</span>
+                    <span style="font-size: 14px; color:#2d4c7c;"><i class="far fa-calendar-alt"></i> ежедневно 10:00–21:00</span>
                 </div>
                 <div class="work-time-large">
                     <i class="far fa-clock"></i> 10:00 – 21:00
                 </div>
-                <div style="font-size:13px; color:#6c819e; margin-top:8px;">
+                <div style="font-size:12.5px; color:#6c819e; margin-top:6px;">
                     <span><i class="far fa-question-circle"></i> Без перерыва</span>
                 </div>
             </div>
 
-            <!-- ТЕЛЕФОНЫ -->
+            <!-- телефон -->
             <div class="info-section">
                 <div class="section-title">
                     <i class="fas fa-phone-alt"></i> Телефоны
@@ -390,7 +438,7 @@
                 </div>
             </div>
 
-            <!-- ПРАЙС С ДОПЛАТОЙ ЗА ДВОЙНУЮ ПЕЧАТЬ -->
+            <!-- расценки -->
             <div class="info-section" style="background: #ffffff;">
                 <div class="section-title">
                     <i class="fas fa-tags"></i> Расценки
@@ -400,9 +448,8 @@
                     <i class="fas fa-circle"></i> Вся печать чёрно-белая
                 </div>
                 
-                <div style="margin-top: 8px;">
-                    
-                    <!-- Сканирование -->
+                <div>
+                    <!-- сканирование -->
                     <div class="price-item-detailed">
                         <div class="price-row">
                             <span class="service-name"><i class="fas fa-scanner"></i> Сканирование</span>
@@ -413,7 +460,7 @@
                         </div>
                     </div>
                     
-                    <!-- Ксерокопия -->
+                    <!-- ксерокопия -->
                     <div class="price-item-detailed">
                         <div class="price-row">
                             <span class="service-name"><i class="fas fa-copy"></i> Ксерокопия</span>
@@ -424,7 +471,7 @@
                         </div>
                     </div>
                     
-                    <!-- Печать с флешки -->
+                    <!-- печать с флешки -->
                     <div class="price-item-detailed">
                         <div class="price-row">
                             <span class="service-name"><i class="fas fa-usb"></i> Печать с флешки</span>
@@ -435,7 +482,7 @@
                         </div>
                     </div>
                     
-                    <!-- Печать по ссылке -->
+                    <!-- печать по ссылке -->
                     <div class="price-item-detailed">
                         <div class="price-row">
                             <span class="service-name"><i class="fas fa-link"></i> Печать по ссылке</span>
@@ -446,7 +493,7 @@
                         </div>
                     </div>
                     
-                    <!-- Печать с почты -->
+                    <!-- печать с почты -->
                     <div class="price-item-detailed">
                         <div class="price-row">
                             <span class="service-name"><i class="fas fa-envelope"></i> Печать с почты</span>
@@ -458,25 +505,25 @@
                     </div>
                 </div>
                 
-                <!-- Блок со скидками и доплатами (ДВОЙНАЯ ПЕЧАТЬ +15₽) -->
-                <div style="font-size: 13px; color: #4e6b98; margin-top: 16px; border-top: 1px dashed #d6e2f0; padding-top: 14px; display: flex; flex-direction: column; gap: 8px;">
-                    <div style="display: flex; flex-wrap: wrap; gap: 8px 12px;">
-                        <span style="background: #f0f5ff; padding: 4px 14px; border-radius: 30px;"><i class="fas fa-tag"></i> От 30 листов — 18 ₽/лист</span>
-                        <span style="background: #f0f5ff; padding: 4px 14px; border-radius: 30px;"><i class="fas fa-file"></i> Цена за лист А4</span>
+                <!-- допы: скидки и двойная печать -->
+                <div class="extra-info">
+                    <div class="extra-tags">
+                        <span class="extra-tag"><i class="fas fa-tag"></i> От 30 листов — 18₽</span>
+                        <span class="extra-tag"><i class="fas fa-file"></i> Цена за лист А4</span>
                     </div>
-                    <!-- важная строка про двойную печать -->
-                    <div style="display: flex; align-items: center; gap: 8px; background: #faf0e6; padding: 8px 14px; border-radius: 40px; color: #a3450e; font-weight: 500;">
-                        <i class="fas fa-layers" style="color: #c95d1e;"></i> Двойная печать (две стороны) — <strong style="font-size: 16px;">+15₽</strong> к стоимости
+                    <div class="double-print">
+                        <i class="fas fa-layers"></i> Двойная печать (две стороны)
+                        <strong>+15₽</strong>
                     </div>
                 </div>
             </div>
 
-            <!-- КОММЕНТАРИЙ К АДРЕСУ -->
+            <!-- комментарий к адресу -->
             <div class="address-comment">
                 <i class="fas fa-location-dot"></i>
                 <div class="address-text">
                     <strong>Комментарий к адресу</strong>
-                    <p>Главный вход → налево, на второй этаж → прямо → пункт выдачи (ориентир: вывеска Яндекс Маркет)</p>
+                    <p>помещение Яндекс Маркет, этаж 2</p>
                 </div>
             </div>
 
@@ -485,7 +532,7 @@
                 <span><i class="far fa-copy"></i> копицентр</span>
                 <span><i class="fas fa-print"></i> только ЧБ</span>
             </div>
-            <div style="display: flex; margin-top: 14px; gap: 6px; color: #416391; font-weight: 500; font-size:13px; background: #edf4fe; padding: 8px 14px; border-radius: 50px;">
+            <div class="store-footer">
                 <i class="fas fa-store"></i> ежедневно 10:00–21:00 • 2 этаж Яндекс Маркет
             </div>
         </div>
